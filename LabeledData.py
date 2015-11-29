@@ -6,7 +6,7 @@ import urllib2
 im = []
 contours = []
 for i in range(1,10):
-    im.append(cv2.imread('labled/'+str(i)+'.jpg'))
+    im.append(cv2.imread('classifiedlabled/'+str(i)+'.jpg'))
     im[-1][im == 255] = 1
     im[-1][im == 0] = 255
     im[-1][im == 1] = 0
